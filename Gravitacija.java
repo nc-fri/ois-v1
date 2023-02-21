@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Gravitacija {
 
     private static final double C = 6.674 * Math.pow(10,-11);
@@ -6,7 +8,10 @@ public class Gravitacija {
 
 
     public static void main(String[] args) {
-        System.out.println("OIS je zakon");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Vnesite nadmorsko višino");
+        int visina = sc.nextInt();
+        izpis(visina,gravitacija(visina));
     }
 
     public static double gravitacija(int visina){
