@@ -12,4 +12,7 @@ public class Gravitacija {
     public static double gravitacija(int visina){
         return (C * M) / Math.pow((r + visina),2);
     }
+    public static void izpis(int visina, double gravitacija) {
+        System.out.printf("Gravitacijski pospešek znaša %f na nadmorski višini %d",gravitacija, visina);
+    }
 }
